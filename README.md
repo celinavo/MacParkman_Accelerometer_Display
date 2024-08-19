@@ -1,6 +1,12 @@
 # XYZ Data Visualization
 
 This project is a Python-based application for visualizing XYZ data from multiple sensors in real-time. It provides a graphical interface with 3D grid visualization, oscilloscope view, and sensor management capabilities.
+This tool was created to help in the design of an educational Brain Health Test Dummy project for the Mac Parkman Foundation.
+
+## Devices
+- SparkFun OpenLog Artemis (without IMU)
+- SparkFun Qwiic Cable Kit
+- SparkFun Tripple Axis Accelerometer Breakout - KW134 (Qwiic)
 
 ## Features
 
@@ -71,13 +77,8 @@ You can modify the following parameters in the code:
 If you encounter issues with sensor connections, ensure that:
 
 1. The correct COM ports are being used.
-2. The baud rate matches your sensor's specifications.
+2. The baud rate (default: 115200) matches your sensor's specifications.
 3. You have the necessary permissions to access the COM ports.
 
-## Contributing
-
-Contributions to this project are welcome. Please fork the repository and submit a pull request with your changes.
-
-## License
-
-This project is open-source and available under the MIT License.
+## Thanks
+Thank you Dr. John Templeton, Ethan Sklar, Malique Gillings, Liam Maloney, Eamon Conners, Stephanie Carey, Nathan Schilaty, and Suzanne Lines for this opportunity!
