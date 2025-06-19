@@ -61,6 +61,7 @@ The project consists of several Python files:
    - Connect/disconnect sensors
    - Activate/deactivate sensors
    - Drag sensors between "External" and "Internal" columns
+      - NOTE: Sensors must be classified as "External" or "Internal" to display data
 5. In the Oscilloscope view, you can adjust green and yellow thresholds using the sliders on the right.
 
 ## Customization
@@ -79,6 +80,15 @@ If you encounter issues with sensor connections, ensure that:
 1. The correct COM ports are being used.
 2. The baud rate (default: 115200) matches your sensor's specifications.
 3. You have the necessary permissions to access the COM ports.
+4. Ensure the SparkFun OpenLog Artemis has the latest firmware.
+   - Use the Artemis Firmware Upload GUI to flash the board
+      (https://github.com/sparkfun/Artemis-Firmware-Upload-GUI)
+   - Recommended firmware version: OpenLog_Artemis-V10-v29.bin
+      (https://github.com/sparkfun/OpenLog_Artemis/blob/main/Binaries/OpenLog_Artemis-V10-v29.bin)
+5. Confirm detection of the KX134 (Qwiic) accelerometer.
+   - Power the board with the sensor connected via a Qwiic cable.
+   - Use a serial terminal like PuTTY to connect at 115200 baud.
+   - Press any key to open the configuration menu.
 
 ## Thanks
 Thank you Dr. John Templeton, Ethan Sklar, Malique Gillings, Liam Maloney, Eamon Conners, Stephanie Carey, Nathan Schilaty, and Suzanne Lines for this opportunity!
