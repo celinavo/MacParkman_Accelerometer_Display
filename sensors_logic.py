@@ -16,6 +16,8 @@ class Sensor:
         try:
             self.ser = serial.Serial(f"COM{self.port}", 115200, timeout=1)
             self.connected = True
+            self.active = True # TODO: Change active and column!!!
+            self.column = "external"
         except serial.SerialException:
             self.connected = False
 
@@ -24,6 +26,7 @@ class Sensor:
             try:
                 line = self.ser.readline().decode('utf-8').strip()
                 if line:
+                    # print(f"COM{self.port} raw data: '{line}'and {self.active}") # TODO: Delete
                     parts = line.split(',')
                     if len(parts) >= 5:
                         self.x = float(parts[2])
